@@ -471,7 +471,7 @@ const firmwareRInstallSteps: InstallStep[] = [
 
       console.log(`install: uploading setup.tgz...`);
       props.intraStatus = "Uploading installer...";
-	  updateProps();
+	    updateProps();
       await printer.sshClient.putFile(setupPath, `/sdcard/setup.tgz`);
       console.log(`install: uploaded tgz`);
     }
